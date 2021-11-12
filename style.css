@@ -10,26 +10,22 @@ body{
 }
 section{
     position: relative;
+    height: 660px;
     left: 40px;
     float: left;
     display: flex;
     flex-direction: column;
     width: 30%;
     background-color: rgb(180, 219, 192);
-    height: 660px;
-    justify-content: space-evenly;
     align-content: space-around;
+    justify-content: space-evenly;
 }
 article{
     padding: 5px;
     margin: 5px;
+   
 }
-.container2{
-    float: right;
-    display: flex;
-    width: 60%;
-    height: fit-content;
-}
+
 hr{
    width: 70%;
    margin-left: 20px;
@@ -51,7 +47,8 @@ aside{
     right: 40px;
     display: flex;
     flex-direction: column;
-   
+    width: 60%;
+    height: fit-content;
 }
 .d1,.d2{
     padding:5px;
@@ -79,4 +76,75 @@ i{
 }
 div > i{
     color: white;
+}
+
+@media (max-width:980px){
+    section{
+        height: 700px;
+        
+    }
+}
+@media (max-width:866px) {
+    section{
+        height: 550px;
+        width: 35%;
+        float: left;
+        position: relative;
+        left: 40px;
+        font-size: 10px;
+        justify-content: space-between;
+        align-content:flex-start ;
+    }
+    aside{ 
+        width: 50%;
+        font-size: 10px;
+        position: relative;
+        right: 40px;
+   
+    }
+    img{
+        width: 100%;
+        height: 150px;
+        
+    }
+}
+@media (max-width:575px){
+    section{
+        height: fit-content;
+        width: 45%;
+        float: left;
+        position: relative;
+        left: 5px;
+        font-size: 10px;
+    }
+    aside{ 
+        width: 50%;
+        font-size: 10px;
+        position: relative;
+        right: 5px;
+   
+    }
+    img{
+        width: 100%;
+        height: 150px;
+        
+    }
+    i{
+        font-size: 10px;
+       
+    }
+}
+@media (max-width:326px){
+   section,aside,footer{
+       font-size: 8px;
+   }
+    img{
+        width: 100%;
+        height: 100px;
+        
+    }
+    i{
+        font-size: 6px;
+       
+    }
 }
